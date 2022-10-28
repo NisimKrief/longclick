@@ -42,6 +42,8 @@ public class MainActivity extends AppCompatActivity implements View.OnLongClickL
         Intent si = new Intent(this,MainActivity2.class);
         si.putExtra("short", shortclick);
         si.putExtra("long", longclick);
+        shortclick = 0;
+        longclick = 0;
         startActivity(si);
     }
 }
